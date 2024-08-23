@@ -10,7 +10,7 @@ model = joblib.load('XGBoost.pkl')
 feature_names = ["Gender", "Age", "PIR", "Drinking", "Sleep_disorder", "Moderate_physical_activity", "Total_cholesterol"]
 
 # Streamlit user interface
-st.title("Predictors of depression in stroke patients")
+st.title("Predictor of depression in stroke patients")
 
 # sex: categorical selection
 Gender = st.selectbox("Gender (0=Male, 1=Female):", options=[0, 1], format_func=lambda x: 'Male (0)' if x == 0 else 'Female (1)')
