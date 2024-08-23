@@ -16,7 +16,7 @@ st.title("Predictors of depression in stroke patients")
 Gender = st.selectbox("Gender (0=Male, 1=Female):", options=[0, 1], format_func=lambda x: 'Male (0)' if x == 0 else 'Female (1)')
 
 # age: numerical input
-Age = st.number_input("Age:", min_value=20, max_value=85, value=50)
+Age = st.number_input("Age:", min_value=20, max_value=85, value=40)
 
 # PIR: numerical input
 PIR = st.number_input("PIR:", min_value=0, max_value=5, value=3)
