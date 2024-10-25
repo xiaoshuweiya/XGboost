@@ -63,7 +63,7 @@ if st.button("Predict"):
                 f"According to our model, you have a low risk of Depression. "
                 f"The model predicts that your probability of not having Depression is {probability:.1f}%. "
                 "However, maintaining a healthy lifestyle is still very important. "
-                "I recommend regular check-ups to monitor your heart health, "
+                "I recommend regular check-ups to monitor your mental health, "
                 "and to seek medical advice promptly if you experience any symptoms."
             )
 
