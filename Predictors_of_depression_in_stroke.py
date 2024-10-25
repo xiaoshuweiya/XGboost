@@ -19,7 +19,7 @@ Gender = st.selectbox("Gender (0=Male, 1=Female):", options=[0, 1], format_func=
 Age = st.number_input("Age:", min_value=20, max_value=85, value=40)
 
 # PIR: numerical input
-PIR = st.number_input("PIR:", min_value=0.00, max_value=5.00, value=3)
+PIR = st.number_input("PIR:", min_value=0.00, max_value=5.00, value=3.00)
 
 # Dringking: categorical selection
 Drinking = st.selectbox("Drinking (0=No, 1=Yes):", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
@@ -31,7 +31,7 @@ Sleep_disorder = st.selectbox("Sleep_disorder (0=No, 1=Yes):", options=[0, 1], f
 Moderate_physical_activity = st.selectbox("Moderate_physical_activity (0=No, 1=Yes):", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
 
 # Total_cholesterol: numerical input
-Total_cholesterol = st.number_input("Total_cholesterol:", min_value=2.07, max_value=9.98, value=6.0)
+Total_cholesterol = st.number_input("Total_cholesterol:", min_value=2.07, max_value=9.98, value=6.00)
 
 # Process inputs and make predictions
 feature_values = [Gender, Age, PIR, Drinking, Sleep_disorder, Moderate_physical_activity, Total_cholesterol]
