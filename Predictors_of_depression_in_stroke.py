@@ -12,14 +12,14 @@ feature_names = ["Gender", "Age", "PIR", "Drinking", "Sleep_disorder", "Moderate
 # Streamlit user interface
 st.title("Predictor of depression in stroke patients")
 
-# sex: categorical selection
+# Gender: categorical selection
 Gender = st.selectbox("Gender (0=Male, 1=Female):", options=[0, 1], format_func=lambda x: 'Male (0)' if x == 0 else 'Female (1)')
 
-# age: numerical input
+# Age: numerical input
 Age = st.number_input("Age:", min_value=20, max_value=85, value=40)
 
 # PIR: numerical input
-PIR = st.number_input("PIR:", min_value=0, max_value=5, value=3)
+PIR = st.number_input("PIR:", min_value=0.00, max_value=5.00, value=3)
 
 # Dringking: categorical selection
 Drinking = st.selectbox("Drinking (0=No, 1=Yes):", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
@@ -27,11 +27,11 @@ Drinking = st.selectbox("Drinking (0=No, 1=Yes):", options=[0, 1], format_func=l
 # Sleep disorder: categorical selection
 Sleep_disorder = st.selectbox("Sleep_disorder (0=No, 1=Yes):", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
 
-# sex: categorical selection
+# Moderate_physical_activity: categorical selection
 Moderate_physical_activity = st.selectbox("Moderate_physical_activity (0=No, 1=Yes):", options=[0, 1], format_func=lambda x: 'No (0)' if x == 0 else 'Yes (1)')
 
-# PIR: numerical input
-Total_cholesterol = st.number_input("Total_cholesterol:", min_value=2.07, max_value=9.98, value=6.0)
+# Total_cholesterol: numerical input
+Total_cholesterol = st.number_input("Total_cholesterol:", min_value=1.00, max_value=10.00, value=6.0)
 
 # Process inputs and make predictions
 feature_values = [Gender, Age, PIR, Drinking, Sleep_disorder, Moderate_physical_activity, Total_cholesterol]
